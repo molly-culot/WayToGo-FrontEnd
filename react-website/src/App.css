@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: rgb(90, 90, 90);
+  color: white;
+  font-size: 20px;
+}
+
+h1{
+  text-align: center;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #a80000;
+  -webkit-text-stroke: 3px #d4d4d4;
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #a80000;
+  -webkit-text-stroke: 1px #d4d4d4;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  width: 50%;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #a80000;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+  width: 20%;
+}
+
+button:hover {
+  background-color: white;
+  color: #a80000;
+}
+
+.child-buttons button {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  background-color: #a80000; 
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+select option {
+  padding: 5px;
+  font-size: 16px;
+}
+
+
