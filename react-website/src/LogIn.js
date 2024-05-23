@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './WayToGoLogo.png'; 
+import logo from './waytogo.png'; 
 
 function LogIn() {
   const [username, setUsername] = useState('');
@@ -22,8 +22,9 @@ function LogIn() {
 
   return (
     <div className="login-container">
-      <img src={logo} alt="WayToGo Logo" className="logo" /> {/* Logo */}
+      
       <div className="login-form">
+        <img src={logo} alt="waytigo Logo" className="logo" /> {/* Logo */}
         <h2>Username</h2>
         <input
           type="text"
