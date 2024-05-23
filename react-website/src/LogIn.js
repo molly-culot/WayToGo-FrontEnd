@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from './WayToGoLogo.png'; 
 
 function LogIn() {
   const [username, setUsername] = useState('');
@@ -20,37 +21,40 @@ function LogIn() {
   };
 
   return (
-    <div>
-      <h2>Username</h2>
-      <input
-        type="text"
-        className="input-box"
-        value={username}
-        onChange={handleUsernameChange}
-      />
-      <h2>Password</h2>
-      <div style={{ position: 'relative' }}>
+    <div className="login-container">
+      <img src={logo} alt="WayToGo Logo" className="logo" /> {/* Logo */}
+      <div className="login-form">
+        <h2>Username</h2>
         <input
-          type={showPassword ? 'text' : 'password'}
+          type="text"
           className="input-box"
-          value={password}
-          onChange={handlePasswordChange}
+          value={username}
+          onChange={handleUsernameChange}
         />
-        <button
-          type="button"
-          onClick={handleTogglePassword}
-          style={{
-            top: '50%',
-            transform: 'translateY(-50%)',
-            border: 'none',
-            background: 'transparent',
-            cursor: 'pointer',
-          }}
-        >
-          {showPassword ? 'Hide' : 'Show'}
-        </button>
+        <h2>Password</h2>
+        <div style={{ position: 'relative' }}>
+          <input
+            type={showPassword ? 'text' : 'password'}
+            className="input-box"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <button
+            type="button"
+            onClick={handleTogglePassword}
+            style={{
+              top: '50%',
+              transform: 'translateY(-50%)',
+              border: 'none',
+              background: 'transparent',
+              cursor: 'pointer',
+            }}
+          >
+            {showPassword ? 'Hide' : 'Show'}
+          </button>
+        </div>
+        <button>Sign In</button>
       </div>
-      <button>Sign In</button>
     </div>
   );
 }

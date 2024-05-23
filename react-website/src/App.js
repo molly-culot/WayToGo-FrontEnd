@@ -6,9 +6,7 @@ import LogSchedule from './LogSchedule';
 function App() {
   return (
     <div className="App">
-      <h1>WayToGo</h1>
       <LogIn />
-      <LogSchedule />
     </div>
   );
 }
