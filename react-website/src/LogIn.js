@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import logo from './waytogo.png'; 
+import './App.css';
+import './Login.css';
+
 
 function LogIn() {
   const [username, setUsername] = useState('');
@@ -22,7 +25,6 @@ function LogIn() {
 
   return (
     <div className="login-container">
-      
       <div className="login-form">
         <img src={logo} alt="waytigo Logo" className="logo" /> {/* Logo */}
         <h2>Username</h2>
@@ -49,6 +51,8 @@ function LogIn() {
               border: 'none',
               background: 'transparent',
               cursor: 'pointer',
+              color: 'black',
+              
             }}
           >
             {showPassword ? 'Hide' : 'Show'}
@@ -59,5 +63,4 @@ function LogIn() {
     </div>
   );
 }
-
 export default LogIn;

@@ -1,0 +1,51 @@
+/* LogSchedule.css */
+.LogSchedule {
+  background-color: grey;
+}
+
+.child-buttons {
+    margin-bottom: 20px;
+  }
+  
+.child-buttons button {
+    margin-right: 10px;
+    background-color: #a80000; /* Red background color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 30%;
+    display: inline;
+}
+  
+.child-buttons button.selected {
+    background-color: #fff; /* White background color */
+    color: #a80000; /* Red text color */
+    border: 1px solid #a80000; /* Red border */
+}
+  
+
+h1 {
+  color: #a80000; /* Red color */
+}
+
+h2 {
+  color: #333; /* Black color */
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #a80000; /* Red background color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a80000; /* Darker red on hover */
+}

@@ -1,35 +1,18 @@
-// LogSchedule.js
+// ScheduleDisplay.js
 import React, { useState } from 'react';
-import Navbar from './Navbar'; 
-import './App.css';
+import Navbar from './Navbar';
 import './LogSchedule.css';
 
-function LogSchedule() {
+function ScheduleDisplay({ children }) {
   const [selectedChild, setSelectedChild] = useState('');
-  const [children, setChildren] = useState({
-    "Name 1": {
-      Monday: { to: true, from: true },
-      Tuesday: { to: true, from: true },
-      Wednesday: { to: true, from: true },
-      Thursday: { to: true, from: true },
-      Friday: { to: true, from: true }
-    },
-    "Name 2": {
-      Monday: { to: true, from: true },
-      Tuesday: { to: true, from: true },
-      Wednesday: { to: true, from: true },
-      Thursday: { to: true, from: true },
-      Friday: { to: true, from: true }
-    }
-    // Add more children here if needed
-  });
+  const [childrenData, setChildrenData] = useState(children);
 
   const handleChildSelect = (childName) => {
     setSelectedChild(childName);
   };
 
   const handleScheduleChange = (childName, day, timeType, value) => {
-    setChildren((prevChildren) => ({
+    setChildrenData((prevChildren) => ({
       ...prevChildren,
       [childName]: {
         ...prevChildren[childName],
@@ -45,9 +28,9 @@ function LogSchedule() {
     <div className="LogSchedule">
       <Navbar />
       <div className="child-buttons">
-        {Object.keys(children).map((childName) => (
-          <button 
-            key={childName} 
+        {Object.keys(childrenData).map((childName) => (
+          <button
+            key={childName}
             onClick={() => handleChildSelect(childName)}
             className={selectedChild === childName ? "selected" : ""}
           >
@@ -58,7 +41,7 @@ function LogSchedule() {
 
       {selectedChild && (
         <>
-          {Object.entries(children[selectedChild]).map(([day, schedule]) => (
+          {Object.entries(childrenData[selectedChild]).map(([day, schedule]) => (
             <div key={day}>
               <h2>{day}</h2>
               To: 
@@ -69,7 +52,7 @@ function LogSchedule() {
                 <option value={true}>Yes</option>
                 <option value={false}>No</option>
               </select>
-              &nbsp;From: 
+              From: 
               <select
                 value={schedule.from}
                 onChange={(e) => handleScheduleChange(selectedChild, day, 'from', e.target.value)}
@@ -86,4 +69,4 @@ function LogSchedule() {
   );
 }
 
-export default LogSchedule;
+export default ScheduleDisplay;
