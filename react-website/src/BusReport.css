@@ -1,0 +1,43 @@
+/* BusReport.css */
+
+/* Container */
+.BusReport {
+    margin: 0 auto;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: white;
+  }
+  
+  /* Table Header */
+  th {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Table Body */
+  td {
+    border-bottom: 1px solid red;
+    padding: 10px;
+  }
+  
+  /* Alternating Row Color */
+  tr:nth-child(even) {
+    background-color: #ff8080; /* Light red */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ff4d4d; /* Dark red */
+  }
+  
+  /* Hover Effect */
+  tr:hover {
+    background-color: #ff1a1a; /* Red on hover */
+  }
+  

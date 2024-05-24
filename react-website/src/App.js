@@ -4,6 +4,7 @@ import './App.css';
 import LogSchedule from './LogSchedule';
 import Navbar from './Navbar';
 import ViewSchedule from './ViewSchedule';
+import BusReport from './BusReport';
 
 function App() {
   return (

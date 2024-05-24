@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import Navbar from './Navbar'; 
 import './BusReport.css';
 
-function ViewSchedule() {
+function BusReport() {
   const [selectedChildren, setSelectedChildren] = useState([]);
   const [children, setChildren] = useState({
     "Name 1": {
-      Monday: { onTime: 'Yes', offTime: 'No' },
-      Tuesday: { onTime: 'Yes', offTime: 'Yes' },
-      Wednesday: { onTime: 'Yes', offTime: 'No' },
-      Thursday: { onTime: 'No', offTime: 'Yes' },
-      Friday: { onTime: 'Yes', offTime: 'Yes' }
+      Monday: { onTime: '7:45 AM', offTime: '3:00 PM' },
+      Tuesday: { onTime: '7:50 AM', offTime: '3:05 PM' },
+      Wednesday: { onTime: '7:55 AM', offTime: '3:10 PM' },
+      Thursday: { onTime: '8:00 AM', offTime: '3:15 PM' },
+      Friday: { onTime: '7:40 AM', offTime: '2:55 PM' }
     },
     "Name 2": {
-      Monday: { onTime: 'Yes', offTime: 'Yes' },
-      Tuesday: { onTime: 'Yes', offTime: 'No' },
-      Wednesday: { onTime: 'No', offTime: 'Yes' },
-      Thursday: { onTime: 'Yes', offTime: 'Yes' },
-      Friday: { onTime: 'Yes', offTime: 'Yes' }
+      Monday: { onTime: '7:30 AM', offTime: '3:10 PM' },
+      Tuesday: { onTime: '7:40 AM', offTime: '3:15 PM' },
+      Wednesday: { onTime: '7:50 AM', offTime: '3:20 PM' },
+      Thursday: { onTime: '7:55 AM', offTime: '3:25 PM' },
+      Friday: { onTime: '7:35 AM', offTime: '3:05 PM' }
     }
     // Add more children here if needed
   });
@@ -31,7 +31,7 @@ function ViewSchedule() {
   };
 
   return (
-    <div className="ViewSchedule">
+    <div className="BusReport">
       <Navbar />
       <div className="child-buttons">
         {Object.keys(children).map((childName) => (
@@ -74,4 +74,4 @@ function ViewSchedule() {
   );
 }
 
-export default ViewSchedule;
+export default BusReport;

@@ -26,7 +26,7 @@ function LogIn() {
   return (
     <div className="login-container">
       <div className="login-form">
-        <img src={logo} alt="waytigo Logo" className="logo" /> {/* Logo */}
+        <img src={logo} alt="waytogo Logo" className="logo" /> {/* Logo */}
         <h2>Username</h2>
         <input
           type="text"
