@@ -8,7 +8,7 @@ import ViewSchedule from './ViewSchedule';
 function App() {
   return (
     <div className="App">
-      <ViewSchedule />
+      <LogIn />
       
     </div>
   );
