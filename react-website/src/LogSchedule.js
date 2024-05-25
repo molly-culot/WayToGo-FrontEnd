@@ -61,7 +61,7 @@ function LogSchedule() {
           {Object.entries(children[selectedChild]).map(([day, schedule]) => (
             <div key={day}>
               <h2>{day}</h2>
-              To: 
+              To School: 
               <select
                 value={schedule.to}
                 onChange={(e) => handleScheduleChange(selectedChild, day, 'to', e.target.value)}
@@ -69,7 +69,7 @@ function LogSchedule() {
                 <option value={true}>Yes</option>
                 <option value={false}>No</option>
               </select>
-              &nbsp;From: 
+              &nbsp;&nbsp;&nbsp; From School: 
               <select
                 value={schedule.from}
                 onChange={(e) => handleScheduleChange(selectedChild, day, 'from', e.target.value)}
@@ -79,7 +79,9 @@ function LogSchedule() {
               </select>
             </div>
           ))}
+          <br></br><br></br>
           <button>Change</button>
+          <br></br>
         </>
       )}
     </div>

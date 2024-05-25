@@ -53,8 +53,8 @@ function BusReport() {
               <thead>
                 <tr>
                   <th>Day</th>
-                  <th>Taking Bus To</th>
-                  <th>Taking Bus From</th>
+                  <th>Time On Bus</th>
+                  <th>Time Off Bus</th>
                 </tr>
               </thead>
               <tbody>
