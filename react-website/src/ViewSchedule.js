@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar'; 
 import './BusReport.css';
 
+  
 function ViewSchedule() {
   const [selectedChildren, setSelectedChildren] = useState([]);
   const [children, setChildren] = useState({

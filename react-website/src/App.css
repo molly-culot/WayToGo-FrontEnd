@@ -1,12 +1,14 @@
+
 .App {
   text-align: center;
 }
 
 body {
-  background-color: grey; 
+  background-color: rgb(196, 196, 196); 
   color: white;
   font-size: 20px;
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet');
 
 h1 {
   text-align: center;
@@ -19,7 +21,8 @@ h1 {
 h2 {
   text-align: center;
   font-size: 35px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Montserrat';
   color: #a80000;
+
 }
 

@@ -7,7 +7,6 @@
 
 /* Table */
 table {
-  width: 90%;
   border-collapse: collapse;
   border-spacing: 0;
   color: white;
@@ -16,7 +15,7 @@ table {
 
 /* Table Header */
 th {
-  background-color: red;
+  background-color: #a80000;
   color: white;
   padding: 10px;
   text-align: left;
@@ -24,20 +23,20 @@ th {
 
 /* Table Body */
 td {
-  border-bottom: 1px solid red;
   padding: 10px;
 }
 
-/* Alternating Row Color */
 tr:nth-child(even) {
-  background-color: #ff8080; /* Light red */
+  background-color: rgb(199, 196, 196); 
+  color: black;
 }
 
 tr:nth-child(odd) {
-  background-color: #ff4d4d; /* Dark red */
+  background-color: #afaeae; 
+  color: black;
 }
 
 /* Hover Effect */
 tr:hover {
-  background-color: #ff1a1a; /* Red on hover */
+  background-color: white; 
 }
