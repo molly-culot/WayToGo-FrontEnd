@@ -9,7 +9,7 @@ import BusReport from './BusReport';
 function App() {
   return (
     <div className="App">
-      <LogSchedule />
+      <ViewSchedule />
       
     </div>
   );
