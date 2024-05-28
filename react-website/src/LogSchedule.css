@@ -1,4 +1,3 @@
-/* LogSchedule.css */
 html{
   font-weight: bold;
 }
@@ -6,49 +5,51 @@ html{
 body{
   background-color: rgb(219, 219, 219);
   color: black;
+  font-family: monospace;
 }
 
 .child-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Space between the buttons */
+  gap: 10px; 
   margin-bottom: 20px;
 }
 
 .child-buttons button {
-  background-color: #a80000; /* Red background color */
+  background-color: #a80000;
   color: #fff;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  width: 40%; /* Adjust width as needed */
-  flex: 0 0 auto; /* Prevent buttons from stretching */
+  width: 40%; 
+  flex: 0 0 auto; 
 }
 
 .child-buttons button.selected {
-  background-color: #fff; /* White background color */
-  color: #a80000; /* Red text color */
-  border: 1px solid #a80000; /* Red border */
+  background-color: #fff; 
+  color: #a80000; 
+  border: 1px solid #a80000; 
 }
 
   
 
 h1 {
-  color: #a80000; /* Red color */
+  color: #a80000;
 }
 
 h2 {
-  color: #333; /* Black color */
+  color: #333; 
 }
 
 select {
   margin-left: 10px;
   padding: 5px;
   color: #a80000;
+  font-family: monospace;
 }
 
 button {
-  background-color: #a80000; /* Red background color */
+  background-color: #a80000; 
   color: #fff;
   border: none;
   cursor: pointer;
